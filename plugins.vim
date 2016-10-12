@@ -12,7 +12,10 @@ Plugin 'tpope/vim-vinegar'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'vim-airline/vim-airline'
-
+Plugin 'airblade/vim-gitgutter'
+Plugin 'raimondi/delimitmate'
+Plugin 'mhinz/vim-signify'
+Plugin 'tpope/vim-fugitive'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
