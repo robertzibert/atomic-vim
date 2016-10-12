@@ -1,29 +1,32 @@
 set nocompatible
-
+set encoding=utf-8
 so ~/.vim/plugins.vim
 
 
-syntax enable					//
 colorscheme atom-dark
+
+
 
  "------Visuals------"
 set backspace=indent,eol,start
 let mapleader = ','
 set number
-set linespace=15 
+set linespace=15
 set guifont=Fira_Code:h17
-set guioptions-=e
-hi LineNr guibg=bg
+
+
+let  NERDTreeDirArrows=0
+
 "------Mappings ------"
-map <C-n> :NERDTreeToggle<CR>
-
-
+nmap <C-n> :NERDTreeToggle<CR>
+so ~/.vim/commands.vim
 "-----AutoCommands---"
 augroup autosourcing
 	autocmd!
-	autocmd BufWritePost .vimrc source %
+	autocmd BufWritePost vimrc source %
 augroup END
 
 "-----Searching---"
 set hlsearch
 set laststatus=2
+
