@@ -12,7 +12,7 @@ set backspace=indent,eol,start
 let mapleader = ','
 set number
 set linespace=15
-set guifont=PragmataPro
+set guifont=Source\ Code\ Pro\ 14
 
 
 let  NERDTreeDirArrows=0

@@ -7,14 +7,10 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-vinegar'
-Plugin 'scrooloose/nerdtree'
-Plugin 'kien/ctrlp.vim'
-Plugin 'vim-airline/vim-airline'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'raimondi/delimitmate'
 
+Plugin 'VundleVim/Vundle.vim'
+
+so ~/.vim/pluginList.vim
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

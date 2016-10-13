@@ -3,18 +3,15 @@ nmap <Leader>ec :e ~/.vim/commands.vim <cr>
 nmap <Leader>ev :e ~/.vim/vimrc <cr>
 
 
-function! MyFunc(myParam)
-	silent !echo "asda" >> test.txt
+function! RegisterPlugin(pluginRepo)
+	:call system("./pluginmaker.sh ". a:pluginRepo)
+	":redraw!"
+	"silent exec source pluginList.vim
+	"":silent source pluginList.vim
+	"":PluginInstal
+	:silent !vim +PluginInstall +qall
 	:redraw!
-	:PluginInstall
+	:echom "Plugin Installed!, please restart vim"
 endfunction
 
-command! -nargs=1 AddPlugin call MyFunc(<f-args>)
-
-
-
-
-
-
-
-
+command! -nargs=1 AddPlugin call RegisterPlugin(<f-args>)
