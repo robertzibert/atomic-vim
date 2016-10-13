@@ -6,3 +6,4 @@ Plugin 'raimondi/delimitmate'
 Plugin 'scrooloose/syntastic'
 
 Plugin 'vim-airline/vim-airline'
+Plugin 'jistr/vim-nerdtree-tabs'
